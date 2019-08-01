@@ -1,10 +1,11 @@
 const express = require('express')
 const { ApolloServer } = require('apollo-server-express')
-const { typeDefs } = require('./api/graphQL/definitions')
+const { typeDefs, resolvers } = require('./api/graphQL/definitions')
 const app = express()
 
 const server = new ApolloServer({
   typeDefs,
+  resolvers,
   playground: true
 })
 
