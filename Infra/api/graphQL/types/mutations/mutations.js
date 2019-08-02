@@ -8,5 +8,10 @@ module.exports = gql`
       "User lastname"
       lastName: String
     ): User
+    "Create post method"
+    createPost (
+      title: String!
+      content: String!
+    ): Post
   }
 `

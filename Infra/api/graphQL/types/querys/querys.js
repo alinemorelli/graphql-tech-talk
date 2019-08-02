@@ -6,5 +6,10 @@ module.exports = gql`
       "User id"
       id: Int
     ): [User]
+    "Get post method"
+    post (
+      "Post id"
+      id: Int
+    ): [Post]
   }
 `
