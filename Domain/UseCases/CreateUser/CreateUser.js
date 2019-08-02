@@ -1,5 +1,5 @@
-const users = require('../../../mockUsers')
-module.exports = async function createUser ({ name, lastName }, injection) {
+const { users } = require('../../../mockData')
+module.exports = async function createUser ({ name, lastName }) {
   const lastId = users[users.length-1].id
   const newUser = {
     id: lastId + 1,
